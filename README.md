@@ -25,7 +25,7 @@ Based on [18F/Laptop](https://github.com/18F/laptop) and [thoughtbot's laptop](h
 * [Virtualenv] for creating isolated Python environments (via [pyenv] if it is installed)
 * [Virtualenvwrapper] for extending Virtualenv (via [pyenv] if it is installed)
 * [Zsh] as your shell
-* PHP 7.1
+* [PHP 7.1](http://www.php.net/)
 * [Composer](https://getcomposer.org) for installing PHP packages
 * [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
 * [Google Chrome](https://www.google.com/chrome/index.html) Just another browser
