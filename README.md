@@ -54,6 +54,18 @@ Based on [18F/Laptop](https://github.com/18F/laptop) and [thoughtbot's laptop](h
 
 It should take less than 15 minutes to install (depends on your machine and internet connection).
 
+## Installation
+
+To install, open a terminal and run the install script:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/laptop)
+```
+
+*Important* After installation, be sure to quit and restart Terminal for changes to take effect.
+
+It is highly recommended to run the script regularly to keep your computer up to date. Once the script has been installed, you'll be able to run it at your convenience by typing laptop and hitting return in your Terminal.
+
 ## Customization
 
 To customize your laptop setup, open a Terminal and execute the following commands:
@@ -75,18 +87,6 @@ These config files will add a few extra packages that you may find useful, inclu
 - [Insomnia](https://insomnia.rest/) for testing APIs
 
 If you want to install additional tools or Mac apps with Homebrew, you may add further customizations to your `~/Brewfile.local`.
-
-## Installation
-
-To install, open a terminal and run the install script:
-
-```bash
-bash <(curl -s https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/laptop)
-```
-
-*Important* After installation, be sure to quit and restart Terminal for changes to take effect.
-
-It is highly recommended to run the script regularly to keep your computer up to date. Once the script has been installed, you'll be able to run it at your convenience by typing laptop and hitting return in your Terminal.
 
 ## How to manage background services (Redis, Postgres, MySQL)
 
