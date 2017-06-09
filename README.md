@@ -88,7 +88,7 @@ These config files will add a few extra packages that you may find useful, inclu
 
 If you want to install additional tools or Mac apps with Homebrew, you may add further customizations to your `~/Brewfile.local`.
 
-## How to manage background services (Redis, Postgres, MySQL)
+## How to manage background services (Postgres, MySQL)
 
 The script does not automatically launch these services after installation because you might not need or want them to be running. With Homebrew Services, starting, stopping, or restarting these services is as easy as:
 
