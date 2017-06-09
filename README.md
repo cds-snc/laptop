@@ -4,6 +4,27 @@ These are local config files for the 18F/laptop script that add a few packages s
 to the CDS development environment.  See the 18F/laptop documentation for an overview
 of the script and packages installed.
 
+## Usage
+
+To include the CDS customizations in your laptop setup, open a Terminal:
+
+```bash
+# Go to your home directory
+cd ~
+
+# Download the files to your computer
+curl --remote-name https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/.laptop.local
+curl --remote-name https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/Brewfile.local
+```
+
+You may add further customizations to `Brewfile.local`.
+
+Finally, run the 18F/laptop install script:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/18F/laptop/master/laptop)
+```
+
 ## Customizations
 
 We've added a few extra applications that we find are helpful in developing at CDS:
