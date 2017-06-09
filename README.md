@@ -1,11 +1,18 @@
-# CDS Laptop Customizations
+# 18F/laptop
 
-These are local config files for the [18F/laptop](https://github.com/18F/laptop) 
-script that add a few packages specific to the CDS development environment. See the [18F/laptop](https://github.com/18F/laptop) documentation for an overview of the script and packages installed.
+Laptop is a shell script which turns your Mac into an awesome web development machine.
+
+It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages based on what is already installed on the machine.
+
+## CDS Laptop Customizations
+
+This repository contains config files for the [18F/laptop](https://github.com/18F/laptop) script that add a few packages specific to the CDS development environment. 
+
+See the [18F/laptop](https://github.com/18F/laptop) documentation for an overview of the script and packages installed.
 
 ## Usage
 
-To include the CDS customizations in your laptop setup, open a Terminal:
+To include the CDS customizations in your laptop setup, open a Terminal and execute the following commands:
 
 ```bash
 # Go to your home directory
@@ -16,7 +23,7 @@ curl --remote-name https://raw.githubusercontent.com/gcdigital-gcnumerique/lapto
 curl --remote-name https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/Brewfile.local
 ```
 
-You may add further customizations to `Brewfile.local`.
+If you want to install additional tools or Mac apps with Homebrew, you may add further customizations to your `~/Brewfile.local`.
 
 Finally, run the 18F/laptop install script:
 
