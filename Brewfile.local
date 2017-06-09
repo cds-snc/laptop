@@ -1,13 +1,6 @@
 cask 'atom'
-cask 'firefox'
-cask 'google-chrome'
 cask 'iterm2'
-
-tap 'homebrew/homebrew-php'
-brew 'php71'
-brew 'composer'
-
-cask 'sequel-pro'
+cask 'firefox'
 cask 'insomnia'
 
 brew 'go'
