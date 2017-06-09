@@ -37,16 +37,27 @@ bash <(curl -s https://raw.githubusercontent.com/18F/laptop/master/laptop)
 
 The script does not automatically launch these services after installation because you might not need or want them to be running. With Homebrew Services, starting, stopping, or restarting these services is as easy as:
 
+```
 brew services start|stop|restart [name of service]
+```
+
 For example:
 
-brew services start redis
+```
+brew services start mysql
+```
+
 To see a list of all installed services:
 
+```
 brew services list
+```
+
 To start all services at once:
 
+```
 brew services start --all
+```
 
 ## Customizations
 
