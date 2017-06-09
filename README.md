@@ -1,6 +1,6 @@
 # CDS Laptop Customizations
 
-This repository contains config files for the [18F/laptop](https://github.com/18F/laptop) script that add a few packages specific to the CDS development environment. 
+This repository contains config files for the [18F/laptop](https://github.com/18F/laptop) script to add a few packages specific to the CDS development environment. 
 
 See the [18F/laptop](https://github.com/18F/laptop) documentation for an overview of the script and packages installed.
 
