@@ -62,9 +62,9 @@ To install, open a terminal and run the install script:
 bash <(curl -s https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/laptop)
 ```
 
-**Important** After installation, be sure to quit and restart Terminal for changes to take effect.
+**Important: After installation, be sure to quit and restart Terminal for changes to take effect.**
 
-It is highly recommended to run the script regularly to keep your computer up to date. Once the script has been installed, you'll be able to run it at your convenience by typing laptop and hitting return in your Terminal.
+It is highly recommended to run the script regularly to keep your computer up to date. Once the script has been installed, you'll be able to run it at your convenience by typing `laptop` and hitting return in your Terminal.
 
 ## Customization
 
