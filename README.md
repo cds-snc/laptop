@@ -4,7 +4,7 @@ Laptop is a shell script which turns your Mac into an awesome web development ma
 
 It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages based on what is already installed on the machine.
 
-Based on [18F/Laptop](https://github.com/18F/laptop) and inspired by [thoughtbot's laptop](https://github.com/thoughtbot/laptop) script.
+Based on [18F/Laptop](https://github.com/18F/laptop) and [thoughtbot's laptop](https://github.com/thoughtbot/laptop) script.
 
 ## What it sets up
 
