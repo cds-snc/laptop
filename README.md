@@ -1,9 +1,7 @@
 # CDS Laptop Customizations
 
 These are local config files for the [18F/laptop](https://github.com/18F/laptop) 
-script that add a few packages specific to the CDS development environment.  
-See the [18F/laptop](https://github.com/18F/laptop) documentation for an overview
-of the script and packages installed.
+script that add a few packages specific to the CDS development environment. See the [18F/laptop](https://github.com/18F/laptop) documentation for an overview of the script and packages installed.
 
 ## Usage
 
@@ -25,6 +23,8 @@ Finally, run the 18F/laptop install script:
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/18F/laptop/master/laptop)
 ```
+
+*Important* After installation, be sure to quit and restart Terminal for changes to take effect.
 
 ## How to manage background services (Redis, Postgres, MySQL)
 
