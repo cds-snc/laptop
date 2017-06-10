@@ -8,29 +8,42 @@ Based on [18F/Laptop](https://github.com/18F/laptop) and [thoughtbot's laptop](h
 
 ## What it sets up
 
-* [chruby] for managing [Ruby] versions
+### Applications
 * [GitHub Desktop] for setting up your SSH keys automatically
+* [Google Chrome](https://www.google.com/chrome/index.html) Just another browser
+* [Slack] for communicating with your team
+* [Sublime Text 3] for coding all the things
+
+### PHP
+* [Composer](https://getcomposer.org) for installing PHP packages
+* [Laravel Installer](https://laravel.com/docs/5.4/installation) for starting new Laravel applications
+* [Laravel Valet](https://laravel.com/docs/5.4/valet) for local PHP/Laravel development
+* [PHP 7.1](http://www.php.net/)
+* [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
+
+### Ruby
+* [chruby] for managing [Ruby] versions
+* [ruby-install] for installing different versions of Ruby
+
+### Node
+* [n] for managing Node.js versions if you do not have [Node.js] already installed (Includes latest [Node.js] and [NPM], for running apps and installing JavaScript packages)
+
+### Python
+* [pyenv] for managing Python versions if you do not have [Python] already installed (includes the latest 3.x [Python])
+* [Virtualenv] for creating isolated Python environments (via [pyenv] if it is installed)
+* [Virtualenvwrapper] for extending Virtualenv (via [pyenv] if it is installed)
+
+### Utilities
 * [Homebrew] for managing operating system libraries
 * [Homebrew Cask] for quickly installing Mac apps from the command line
 * [Homebrew Services] so you can easily stop, start, and restart services
 * [hub] for interacting with the GitHub API
-* [MySQL] for storing relational data
-* [n] for managing Node.js versions if you do not have [Node.js] already installed (Includes latest [Node.js] and [NPM], for running apps and installing JavaScript packages)
-* [Postgres] for storing relational data
-* [pyenv] for managing Python versions if you do not have [Python] already installed (includes the latest 3.x [Python])
-* [ruby-install] for installing different versions of Ruby
-* [Slack] for communicating with your team
-* [Sublime Text 3] for coding all the things
 * [The Silver Searcher] for finding things in files
-* [Virtualenv] for creating isolated Python environments (via [pyenv] if it is installed)
-* [Virtualenvwrapper] for extending Virtualenv (via [pyenv] if it is installed)
 * [Zsh] as your shell
-* [PHP 7.1](http://www.php.net/)
-* [Composer](https://getcomposer.org) for installing PHP packages
-* [Laravel Installer](https://laravel.com/docs/5.4/installation) for starting new Laravel applications
-* [Laravel Valet](https://laravel.com/docs/5.4/valet) for local PHP/Laravel development
-* [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
-* [Google Chrome](https://www.google.com/chrome/index.html) Just another browser
+
+### Databases
+* [MySQL] for storing relational data
+* [Postgres] for storing relational data
 
 [chruby]: https://github.com/postmodern/chruby
 [GitHub Desktop]: https://desktop.github.com/
