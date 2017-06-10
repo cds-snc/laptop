@@ -9,6 +9,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 ### Applications
 * [GitHub Desktop] for setting up your SSH keys automatically
 * [Google Chrome](https://www.google.com/chrome/index.html) Just another browser
+* [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
 * [Slack] for communicating with your team
 * [Sublime Text 3] for coding all the things
 
@@ -17,7 +18,6 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 * [Laravel Installer](https://laravel.com/docs/5.4/installation) for starting new Laravel applications
 * [Laravel Valet](https://laravel.com/docs/5.4/valet) for local PHP/Laravel development
 * [PHP 7.1](http://www.php.net/)
-* [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
 
 ### Ruby
 * [chruby] for managing [Ruby] versions
