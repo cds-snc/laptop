@@ -86,6 +86,7 @@ These config files will add a few extra packages that you may find useful, inclu
 - [Atom](https://atom.io/) GitHub's open source text editor
 - [iTerm2](http://iterm2.com/) A better terminal
 - [Insomnia](https://insomnia.rest/) for testing APIs
+- [Mailhog](https://github.com/mailhog/MailHog) for local development email testing
 
 If you want to install additional tools or Mac apps with Homebrew, you may add further customizations to your `~/Brewfile.local`.
 
