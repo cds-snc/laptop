@@ -4,8 +4,6 @@ Laptop is a shell script which turns your Mac into an awesome web development ma
 
 It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages based on what is already installed on the machine.
 
-Based on [18F/Laptop](https://github.com/18F/laptop) and [thoughtbot's laptop](https://github.com/thoughtbot/laptop) script.
-
 ## What it sets up
 
 ### Applications
@@ -160,3 +158,8 @@ or
 ```
 brew install zsh
 ```
+
+## Credit and License
+This CDS script is based on the [18F/Laptop](https://github.com/18F/laptop) and in turn [thoughtbot's laptop](https://github.com/thoughtbot/laptop) script.
+
+thoughtbot's original work remains covered under an [MIT License](https://github.com/thoughtbot/laptop/blob/c997c4fb5a986b22d6c53214d8f219600a4561ee/LICENSE)
