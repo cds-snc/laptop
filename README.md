@@ -81,6 +81,7 @@ curl --remote-name https://raw.githubusercontent.com/gcdigital-gcnumerique/lapto
 
 These config files will add a few extra packages that you may find useful, including:  
 
+- [Yarn](https://yarnpkg.com/en/) An alternative to NPM
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/) Yet another browser 
 - [Atom](https://atom.io/) GitHub's open source text editor
 - [iTerm2](http://iterm2.com/) A better terminal

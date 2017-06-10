@@ -1,3 +1,5 @@
+brew 'yarn', args: ["ignore-dependencies"]
+
 cask 'atom'
 cask 'iterm2'
 cask 'firefox'
