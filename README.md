@@ -27,6 +27,8 @@ Based on [18F/Laptop](https://github.com/18F/laptop) and [thoughtbot's laptop](h
 * [Zsh] as your shell
 * [PHP 7.1](http://www.php.net/)
 * [Composer](https://getcomposer.org) for installing PHP packages
+* [Laravel Installer](https://laravel.com/docs/5.4/installation) for starting new Laravel applications
+* [Laravel Valet](https://laravel.com/docs/5.4/valet) for local PHP/Laravel development
 * [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
 * [Google Chrome](https://www.google.com/chrome/index.html) Just another browser
 
@@ -102,6 +104,7 @@ For example:
 
 ```
 brew services start mysql
+brew services start mailhog
 ```
 
 To see a list of all installed services:
