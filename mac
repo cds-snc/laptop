@@ -302,6 +302,13 @@ elif [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then
   open ~/Applications/GitHub\ Desktop.app
 fi
 
+fancy_echo "Installing or Updating Laravel Installer"
+composer global require laravel/installer
+
+fancy_echo "Installing or Updating Laravel Valet"
+composer global require laravel/valet
+valet install
+
 if [ -f "$HOME/.laptop.local" ]; then
   # shellcheck source=/dev/null
   . "$HOME/.laptop.local"
