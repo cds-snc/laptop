@@ -90,8 +90,27 @@ case "$SHELL" in
     ;;
 esac
 
+if [ $SHELL = "/bin/zsh" ]; then
+  if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    bold=$(tput bold)
+    normal=$(tput sgr0)
+    echo "We recommend installing oh-my-zsh for a great custom terminal experience."
+    echo "Do you want to install Oh-My-Zsh? (y/n)"
+    read -r -n 1 response
+    if [ "$response" = "y" ]; then
+      git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+      cp ~/.zshrc ~/.zshrc.pre-oh-my-zsh
+      cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+    fi
+  fi
+fi
+
 brew_is_installed() {
   brew list -1 | grep -Fqx "$1"
+}
+
+composer_is_installed() {
+  composer global info | grep -Fq "$1"
 }
 
 tap_is_installed() {
@@ -302,12 +321,25 @@ elif [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then
   open ~/Applications/GitHub\ Desktop.app
 fi
 
-fancy_echo "Installing or Updating Laravel Installer"
-composer global require laravel/installer
+# add path to composer/vendor/bin
+append_to_file "$shell_file" 'export PATH="$PATH:$HOME/.composer/vendor/bin"'
 
-fancy_echo "Installing or Updating Laravel Valet"
-composer global require laravel/valet
-valet install
+if ! composer_is_installed "laravel/installer"; then
+  fancy_echo "Installing Laravel Installer"
+  composer global require laravel/installer
+else
+  fancy_echo "Laravel already installed! Updating..."
+  composer global update laravel/installer
+fi
+
+if ! composer_is_installed  "laravel/valet"; then
+  fancy_echo "Installing or Updating Laravel Valet"
+  composer global require laravel/valet
+  valet install
+else
+  fancy_echo "Valet already installed! Updating..."
+  composer global update laravel/valet
+fi
 
 if [ -f "$HOME/.laptop.local" ]; then
   # shellcheck source=/dev/null
