@@ -12,24 +12,13 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 * [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
 * [Slack] for communicating with your team
 * [Sublime Text 3] for coding all the things
+* [The Unarchiver](http://unarchiver.c3.cx/unarchiver) for unarchiving all the things
 
 ### PHP
 * [Composer](https://getcomposer.org) for installing PHP packages
 * [Laravel Installer](https://laravel.com/docs/5.4/installation) for starting new Laravel applications
 * [Laravel Valet](https://laravel.com/docs/5.4/valet) for local PHP/Laravel development
 * [PHP 7.1](http://www.php.net/)
-
-### Ruby
-* [chruby] for managing [Ruby] versions
-* [ruby-install] for installing different versions of Ruby
-
-### Node
-* [n] for managing Node.js versions if you do not have [Node.js] already installed (Includes latest [Node.js] and [NPM], for running apps and installing JavaScript packages)
-
-### Python
-* [pyenv] for managing Python versions if you do not have [Python] already installed (includes the latest 3.x [Python])
-* [Virtualenv] for creating isolated Python environments (via [pyenv] if it is installed)
-* [Virtualenvwrapper] for extending Virtualenv (via [pyenv] if it is installed)
 
 ### Utilities
 * [Homebrew] for managing operating system libraries
@@ -100,6 +89,7 @@ These config files will add a few extra packages that you may find useful, inclu
 - [iTerm2](http://iterm2.com/) A better terminal
 - [Insomnia](https://insomnia.rest/) for testing APIs
 - [Mailhog](https://github.com/mailhog/MailHog) for local development email testing
+- [BBEdit]()
 
 If you want to install additional tools or Mac apps with Homebrew, you may add further customizations to your `~/Brewfile.local`.
 

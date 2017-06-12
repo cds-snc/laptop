@@ -1,9 +1,4 @@
-brew 'yarn', args: ["ignore-dependencies"]
-brew 'mailhog'
-
 cask 'atom'
-cask 'iterm2'
-cask 'firefox'
-cask 'insomnia'
+cask 'bbedit'
 
 brew 'go'
