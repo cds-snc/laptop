@@ -90,7 +90,7 @@ case "$SHELL" in
     ;;
 esac
 
-if [ echo $SHELL | grep -q "/zsh" ]; then
+if [ $SHELL = "/bin/zsh" ]; then
   if [ ! -d "$HOME/.oh-my-zsh" ]; then
     bold=$(tput bold)
     normal=$(tput sgr0)
