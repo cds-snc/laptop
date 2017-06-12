@@ -1,11 +1,8 @@
 # CDS Laptop
 
-Laptop is a shell script which turns your Mac into an awesome web development machine.  It can be run multiple times on the same machine 
-safely. It installs, upgrades, or skips packages based on what is already installed on the machine.
+Laptop is a shell script which turns your Mac into an awesome web development machine.  
 
-Note: We are currently focussed on smaller PHP-based projects, so this Laptop script excludes some of the other common dev environments like
-Ruby, Python and Go.  This will change over time as we ramp up our dev team, and this script will be updated to provide configuration of 
-those environments as we start working with them.
+It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages based on what is already installed on the machine.
 
 ## What it sets up
 
