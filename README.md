@@ -7,7 +7,6 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 ## What it sets up
 
 ### Applications
-* [Dropbox](https://www.dropbox.com/) File sharing/storage
 * [Firefox](https://www.mozilla.org/en-US/firefox/) Yet another browser
 * [GitHub Desktop] for setting up your SSH keys automatically
 * [Google Chrome](https://www.google.com/chrome/index.html) Just another browser
@@ -15,7 +14,6 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 * [iTerm2](http://iterm2.com/) A better terminal
 * [Lastpass](https://www.lastpass.com/) For remembering passwords
 * [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
-* [Skype](https://www.skype.com/en/) For video conferencing
 * [Slack] for communicating with your team
 * [Sublime Text 3] for coding all the things
 * [The Unarchiver](http://unarchiver.c3.cx/unarchiver) for unarchiving all the things
@@ -91,8 +89,10 @@ curl --remote-name https://raw.githubusercontent.com/gcdigital-gcnumerique/lapto
 
 These config files will add a few extra packages that you may find useful, including:  
 
-- [Atom](https://atom.io/) GitHub's open source text editor
-- [BBEdit](https://www.barebones.com/products/bbedit/) Another great text editor
+* [Atom](https://atom.io/) GitHub's open source text editor
+* [BBEdit](https://www.barebones.com/products/bbedit/) Another great text editor
+* [Dropbox](https://www.dropbox.com/) File sharing/storage
+* [Skype](https://www.skype.com/en/) For video conferencing
 
 If you want to install additional tools or Mac apps with Homebrew, you may add further customizations to your `~/Brewfile.local`.
 

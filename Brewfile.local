@@ -1,2 +1,4 @@
 cask 'atom'
 cask 'bbedit'
+cask 'dropbox'
+cask 'skype'
