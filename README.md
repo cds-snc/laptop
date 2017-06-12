@@ -7,9 +7,9 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 ## What it sets up
 
 ### Applications
-* [Firefox](https://www.mozilla.org/en-US/firefox/) Yet another browser
+* [Firefox](https://www.mozilla.org/en-US/firefox/) Just another browser
 * [GitHub Desktop] for setting up your SSH keys automatically
-* [Google Chrome](https://www.google.com/chrome/index.html) Just another browser
+* [Google Chrome](https://www.google.com/chrome/index.html) Yet another browser
 * [Insomnia](https://insomnia.rest/) for testing APIs
 * [iTerm2](http://iterm2.com/) A better terminal
 * [Lastpass](https://www.lastpass.com/) For remembering passwords
