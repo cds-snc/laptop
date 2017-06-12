@@ -1,4 +1,5 @@
 cask 'atom'
 cask 'bbedit'
 cask 'dropbox'
+cask 'google-drive'
 cask 'skype'

@@ -9,6 +9,7 @@ cask 'lastpass'
 
 brew 'git'
 brew 'libgit2'
+brew 'node'
 
 brew 'yarn', args: ["ignore-dependencies"]
 brew 'the_silver_searcher'
