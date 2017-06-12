@@ -7,9 +7,15 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 ## What it sets up
 
 ### Applications
+* [Dropbox](https://www.dropbox.com/) File sharing/storage
+* [Firefox](https://www.mozilla.org/en-US/firefox/) Yet another browser
 * [GitHub Desktop] for setting up your SSH keys automatically
 * [Google Chrome](https://www.google.com/chrome/index.html) Just another browser
+* [Insomnia](https://insomnia.rest/) for testing APIs
+* [iTerm2](http://iterm2.com/) A better terminal
+* [Lastpass](https://www.lastpass.com/) For remembering passwords
 * [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
+* [Skype](https://www.skype.com/en/) For video conferencing
 * [Slack] for communicating with your team
 * [Sublime Text 3] for coding all the things
 * [The Unarchiver](http://unarchiver.c3.cx/unarchiver) for unarchiving all the things
@@ -27,6 +33,8 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 * [hub] for interacting with the GitHub API
 * [The Silver Searcher] for finding things in files
 * [Zsh] as your shell
+* [Yarn](https://yarnpkg.com/en/) An alternative to NPM
+* [Mailhog](https://github.com/mailhog/MailHog) for local development email testing
 
 ### Databases
 * [MySQL] for storing relational data
@@ -83,13 +91,8 @@ curl --remote-name https://raw.githubusercontent.com/gcdigital-gcnumerique/lapto
 
 These config files will add a few extra packages that you may find useful, including:  
 
-- [Yarn](https://yarnpkg.com/en/) An alternative to NPM
-- [Firefox](https://www.mozilla.org/en-US/firefox/new/) Yet another browser 
 - [Atom](https://atom.io/) GitHub's open source text editor
-- [iTerm2](http://iterm2.com/) A better terminal
-- [Insomnia](https://insomnia.rest/) for testing APIs
-- [Mailhog](https://github.com/mailhog/MailHog) for local development email testing
-- [BBEdit]()
+- [BBEdit](https://www.barebones.com/products/bbedit/) Another great text editor
 
 If you want to install additional tools or Mac apps with Homebrew, you may add further customizations to your `~/Brewfile.local`.
 
