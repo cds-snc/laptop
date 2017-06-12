@@ -1,4 +1,2 @@
 cask 'atom'
 cask 'bbedit'
-
-brew 'go'

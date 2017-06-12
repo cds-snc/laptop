@@ -9,5 +9,3 @@ if [ -f "$HOME/Brewfile.local" ]; then
     fancy_echo "Some items in Brewfile.local were not installed successfully."
   fi
 fi
-
-append_to_file "$HOME/.zshrc" 'export PATH="$PATH:/usr/local/opt/go/libexec/bin"'
