@@ -121,11 +121,31 @@ yarn_is_installed() {
   yarn global ls | grep -Fq "$1"
 }
 
+gem_install_or_update() {
+  if gem list "$1" | grep "^$1 ("; then
+    fancy_echo "Updating %s ..." "$1"
+    gem update "$@"
+  else
+    fancy_echo "Installing %s ..." "$1"
+    gem install "$@"
+  fi
+}
+
 app_is_installed() {
   # shellcheck disable=SC2039
   local app_name
   app_name=$(echo "$1" | cut -d'-' -f1)
   find /Applications -iname "$app_name*" -maxdepth 1 | egrep '.*' > /dev/null
+}
+
+latest_installed_ruby() {
+  find "$HOME/.rubies" -maxdepth 1 -name 'ruby-*' | tail -n1 | egrep -o '\d+\.\d+\.\d+'
+}
+
+switch_to_latest_ruby() {
+  # shellcheck disable=SC1091
+  . /usr/local/share/chruby/chruby.sh
+  chruby "ruby-$(latest_installed_ruby)"
 }
 
 append_to_file "$shell_file" "alias laptop='bash <(curl -s https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/laptop)'"
@@ -177,6 +197,87 @@ fi
 
 # shellcheck disable=SC2016
 append_to_file "$shell_file" 'eval "$(hub alias -s)"'
+
+fancy_echo 'Checking on Node.js installation...'
+
+if ! brew_is_installed "node"; then
+  if command -v n > /dev/null; then
+    fancy_echo "We recommend using \`nvm\` and not \`n\`."
+    fancy_echo "See https://pages.18f.gov/frontend/#install-npm"
+  elif ! command -v nvm > /dev/null; then
+    fancy_echo 'Installing nvm and lts Node.js and npm...'
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+    export NVM_DIR="$HOME/.nvm"
+    # shellcheck source=/dev/null
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    nvm install node --lts
+  else
+    fancy_echo 'version manager detected.  Skipping...'
+  fi
+else
+  brew bundle --file=- <<EOF
+  brew 'node'
+EOF
+fi
+
+fancy_echo '...Finished Node.js installation checks.'
+
+
+
+fancy_echo 'Checking on Ruby installation...'
+
+append_to_file "$HOME/.gemrc" 'gem: --no-document'
+
+if command -v rbenv >/dev/null || command -v rvm >/dev/null; then
+  fancy_echo 'We recommend chruby and ruby-install over RVM or rbenv'
+else
+  if ! brew_is_installed "chruby"; then
+    fancy_echo 'Installing chruby, ruby-install, and the latest Ruby...'
+
+    brew bundle --file=- <<EOF
+    brew 'chruby'
+    brew 'ruby-install'
+EOF
+
+    append_to_file "$shell_file" 'source /usr/local/share/chruby/chruby.sh'
+    append_to_file "$shell_file" 'source /usr/local/share/chruby/auto.sh'
+
+    ruby-install ruby
+
+    append_to_file "$shell_file" "chruby ruby-$(latest_installed_ruby)"
+
+    switch_to_latest_ruby
+  else
+    brew bundle --file=- <<EOF
+    brew 'chruby'
+    brew 'ruby-install'
+EOF
+    fancy_echo 'Checking if a newer version of Ruby is available...'
+    switch_to_latest_ruby
+
+    ruby-install --latest > /dev/null
+    latest_stable_ruby="$(cat < "$HOME/.cache/ruby-install/ruby/stable.txt" | tail -n1)"
+
+    if ! [ "$latest_stable_ruby" = "$(latest_installed_ruby)" ]; then
+      fancy_echo "Installing latest stable Ruby version: $latest_stable_ruby"
+      ruby-install ruby
+    else
+      fancy_echo 'You have the latest version of Ruby'
+    fi
+  fi
+fi
+
+fancy_echo 'Updating Rubygems...'
+gem update --system
+
+gem_install_or_update 'bundler'
+
+fancy_echo "Configuring Bundler ..."
+number_of_cores=$(sysctl -n hw.ncpu)
+bundle config --global jobs $((number_of_cores - 1))
+
+fancy_echo '...Finished Ruby installation checks.'
+
 
 if app_is_installed 'GitHub'; then
   fancy_echo "It looks like you've already configured your GitHub SSH keys."
