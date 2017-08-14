@@ -67,7 +67,7 @@ It should take less than 15 minutes to install (depends on your machine and inte
 To install, open a terminal and run the install script:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/laptop)
+bash <(curl -s https://raw.githubusercontent.com/cds-snc/laptop/master/laptop)
 ```
 
 **Important: After installation, be sure to quit and restart Terminal for changes to take effect.**
