@@ -83,8 +83,8 @@ To customize your laptop setup, open a Terminal and execute the following comman
 cd ~
 
 # Download the files to your computer
-curl --remote-name https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/.laptop.local
-curl --remote-name https://raw.githubusercontent.com/gcdigital-gcnumerique/laptop/master/Brewfile.local
+curl --remote-name https://raw.githubusercontent.com/cds-snc/laptop/master/.laptop.local
+curl --remote-name https://raw.githubusercontent.com/cds-snc/laptop/master/Brewfile.local
 ```
 
 These config files will add a few extra packages that you may find useful, including:  
