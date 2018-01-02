@@ -118,7 +118,7 @@ tap_is_installed() {
 }
 
 yarn_is_installed() {
-  yarn global ls | grep -Fq "$1"
+  yarn global list | grep -Fq "$1"
 }
 
 gem_install_or_update() {
@@ -277,14 +277,6 @@ number_of_cores=$(sysctl -n hw.ncpu)
 bundle config --global jobs $((number_of_cores - 1))
 
 fancy_echo '...Finished Ruby installation checks.'
-
-
-#if app_is_installed 'GitHub'; then
-#  fancy_echo "It looks like you've already configured your GitHub SSH keys."
-#  fancy_echo "If not, you can do it by signing in to the GitHub app on your Mac."
-#elif [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then
-#  open ~/Applications/GitHub\ Desktop.app
-#fi
 
 if ! yarn_is_installed "gulp"; then
   fancy_echo "Installing Gulp"
