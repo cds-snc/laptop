@@ -23,7 +23,6 @@ brew 'hub'
 
 brew 'mailhog'
 
-cask 'github-desktop'
 cask 'sublime-text'
 cask 'sequel-pro'
 cask 'virtualbox'
