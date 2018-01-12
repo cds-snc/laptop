@@ -287,14 +287,6 @@ fi
 # add path to composer/vendor/bin
 append_to_file "$shell_file" 'export PATH="$PATH:$HOME/.composer/vendor/bin"'
 
-if ! composer_is_installed "laravel/installer"; then
-  fancy_echo "Installing Laravel Installer"
-  composer global require laravel/installer
-else
-  fancy_echo "Laravel already installed! Updating..."
-  composer global update laravel/installer
-fi
-
 if ! composer_is_installed  "laravel/valet"; then
   fancy_echo "Installing or Updating Laravel Valet"
   composer global require laravel/valet
@@ -302,6 +294,14 @@ if ! composer_is_installed  "laravel/valet"; then
 else
   fancy_echo "Valet already installed! Updating..."
   composer global update laravel/valet
+fi
+
+if ! composer_is_installed "laravel/installer"; then
+  fancy_echo "Installing Laravel Installer"
+  composer global require laravel/installer
+else
+  fancy_echo "Laravel already installed! Updating..."
+  composer global update laravel/installer
 fi
 
 if [ -f "$HOME/.laptop.local" ]; then
