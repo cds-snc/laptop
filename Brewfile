@@ -25,7 +25,6 @@ brew 'mailhog'
 
 cask 'sublime-text'
 cask 'sequel-pro'
-cask 'virtualbox'
 cask 'vagrant'
 cask 'iterm2'
 cask 'insomnia'
