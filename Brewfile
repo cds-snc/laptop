@@ -29,6 +29,5 @@ cask 'vagrant'
 cask 'iterm2'
 cask 'insomnia'
 
-tap 'homebrew/homebrew-php'
 brew 'php71'
 brew 'composer'
