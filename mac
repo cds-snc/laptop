@@ -287,6 +287,8 @@ fi
 # add path to composer/vendor/bin
 append_to_file "$shell_file" 'export PATH="$PATH:$HOME/.composer/vendor/bin"'
 
+brew link php71 --force
+
 if ! composer_is_installed  "laravel/valet"; then
   fancy_echo "Installing or Updating Laravel Valet"
   composer global require laravel/valet
