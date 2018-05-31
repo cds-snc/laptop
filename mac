@@ -98,7 +98,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Do you want to install Oh-My-Zsh? (y/n)"
   read -r -n 1 response
   if [ "$response" = "y" ]; then
-    git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+    git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
     cp ~/.zshrc ~/.zshrc.pre-oh-my-zsh
     cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
   fi
