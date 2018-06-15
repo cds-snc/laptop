@@ -5,11 +5,11 @@ cask 'google-chrome'
 cask 'firefox'
 cask 'slack'
 cask 'evernote'
-cask 'lastpass'
 
 brew 'git'
 brew 'libgit2'
 brew 'node'
+brew 'redis'
 
 brew 'yarn', args: ["ignore-dependencies"]
 brew 'the_silver_searcher'
@@ -24,6 +24,7 @@ brew 'hub'
 brew 'mailhog'
 
 cask 'sublime-text'
+cask 'visual-studio-code'
 cask 'sequel-pro'
 cask 'vagrant'
 cask 'iterm2'
