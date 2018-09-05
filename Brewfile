@@ -7,6 +7,7 @@ cask 'slack'
 cask 'evernote'
 
 brew 'git'
+brew 'git-secrets'
 brew 'libgit2'
 brew 'node'
 brew 'redis'
