@@ -1,14 +1,10 @@
 cask_args appdir: '/Applications'
 
-cask 'the-unarchiver'
-cask 'google-chrome'
-cask 'firefox'
-cask 'slack'
-cask 'evernote'
-
 brew 'git'
+brew 'hub'
 brew 'git-secrets'
 brew 'libgit2'
+
 brew 'node'
 brew 'redis'
 
@@ -24,23 +20,22 @@ brew 'awscli'
 brew 'azure-cli'
 
 brew 'yarn', args: ["ignore-dependencies"]
-brew 'the_silver_searcher'
 
 tap 'homebrew/services'
 
 brew 'postgresql'
 brew 'mysql'
-
-brew 'hub'
-
 brew 'mailhog'
 
+brew 'php71'
+brew 'composer'
+
+cask 'google-chrome'
+cask 'firefox'
+cask 'slack'
 cask 'sublime-text'
 cask 'visual-studio-code'
 cask 'sequel-pro'
 cask 'vagrant'
 cask 'iterm2'
 cask 'insomnia'
-
-brew 'php71'
-brew 'composer'
