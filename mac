@@ -101,6 +101,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
     git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
     cp ~/.zshrc ~/.zshrc.pre-oh-my-zsh
     cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+    sed -i .bak 's/\(^plugins=([^)]*\)/\1 kubectl docker/' ~/.zshrc
   fi
 fi
 
