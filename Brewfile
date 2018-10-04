@@ -19,6 +19,10 @@ brew 'docker-machine'
 cask 'minikube'
 brew 'kubernetes-cli'
 
+cask 'google-cloud-sdk'
+brew 'awscli'
+brew 'azure-cli'
+
 brew 'yarn', args: ["ignore-dependencies"]
 brew 'the_silver_searcher'
 
