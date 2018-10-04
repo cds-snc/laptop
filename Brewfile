@@ -12,6 +12,13 @@ brew 'libgit2'
 brew 'node'
 brew 'redis'
 
+brew 'docker'
+brew 'docker-compose'
+brew 'docker-machine'
+
+cask 'minikube'
+brew 'kubernetes-cli'
+
 brew 'yarn', args: ["ignore-dependencies"]
 brew 'the_silver_searcher'
 
