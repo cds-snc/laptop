@@ -227,6 +227,8 @@ fancy_echo 'Checking on Ruby installation...'
 
 append_to_file "$HOME/.gemrc" 'gem: --no-document'
 
+mkdir ~/.rubies
+
 if command -v rbenv >/dev/null || command -v rvm >/dev/null; then
   fancy_echo 'We recommend chruby and ruby-install over RVM or rbenv'
 else
