@@ -323,28 +323,6 @@ if ! yarn_is_installed "gulp"; then
   yarn global add gulp
 fi
 
-# add path to composer/vendor/bin
-append_to_file "$shell_file" 'export PATH="$PATH:$HOME/.composer/vendor/bin"'
-
-brew link php71 --force
-
-if ! composer_is_installed  "laravel/valet"; then
-  fancy_echo "Installing or Updating Laravel Valet"
-  composer global require laravel/valet
-  ~/.composer/vendor/bin/valet install
-else
-  fancy_echo "Valet already installed! Updating..."
-  composer global update laravel/valet
-fi
-
-if ! composer_is_installed "laravel/installer"; then
-  fancy_echo "Installing Laravel Installer"
-  composer global require laravel/installer
-else
-  fancy_echo "Laravel already installed! Updating..."
-  composer global update laravel/installer
-fi
-
 if [ -f "$HOME/.laptop.local" ]; then
   # shellcheck source=/dev/null
   . "$HOME/.laptop.local"
