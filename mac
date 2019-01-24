@@ -223,46 +223,6 @@ fi
 
 fancy_echo '...Finished Node.js installation checks.'
 
-fancy_echo 'Checking on Python installation...'
-
-if ! brew_is_installed "python3"; then
-  brew bundle --file=- <<EOF
-  brew 'pyenv'
-  brew 'pyenv-virtualenv'
-  brew 'pyenv-virtualenvwrapper'
-EOF
-  # shellcheck disable=SC2016
-  append_to_file "$shell_file" 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi'
-  # shellcheck disable=SC2016
-  append_to_file "$shell_file" 'if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi'
-
-  # pyenv currently doesn't have a convenience version to use, e.g., "latest",
-  # so we check for the latest version against Homebrew instead.
-  latest_python_3="$(brew info python3 | egrep -o "3\.\d+\.\d+" | head -1)"
-
-  if ! pyenv versions | ag "$latest_python_3" > /dev/null; then
-    pyenv install "$latest_python_3"
-    pyenv global "$latest_python_3"
-    pyenv rehash
-  fi
-else
-  brew bundle --file=- <<EOF
-  brew 'python3'
-EOF
-fi
-
-if ! brew_is_installed "pyenv-virtualenvwrapper"; then
-  if ! pip3 list | ag "virtualenvwrapper" > /dev/null; then
-    fancy_echo 'Installing virtualenvwrapper...'
-    pip3 install virtualenvwrapper
-    append_to_file "$shell_file" 'export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3'
-    append_to_file "$shell_file" 'export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv'
-    append_to_file "$shell_file" 'source /usr/local/bin/virtualenvwrapper.sh'
-  fi
-fi
-
-fancy_echo '...Finished Python installation checks.'
-
 fancy_echo 'Checking on Ruby installation...'
 
 append_to_file "$HOME/.gemrc" 'gem: --no-document'
