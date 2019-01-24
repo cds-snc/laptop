@@ -11,6 +11,7 @@ brew 'redis'
 brew 'docker'
 brew 'docker-compose'
 brew 'docker-machine'
+cask 'docker'
 
 cask 'minikube'
 brew 'kubernetes-cli'
