@@ -6,59 +6,29 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 
 ## What it sets up
 
-### Applications
-* [Firefox](https://www.mozilla.org/en-US/firefox/) Just another browser
-* [GitHub Desktop] for setting up your SSH keys automatically
-* [Google Chrome](https://www.google.com/chrome/index.html) Yet another browser
-* [Insomnia](https://insomnia.rest/) for testing APIs
-* [iTerm2](http://iterm2.com/) A better terminal
-* [Lastpass](https://www.lastpass.com/) For remembering passwords
-* [Sequel Pro](https://www.sequelpro.com/) for working with MySQL databases
-* [Slack] for communicating with your team
-* [Sublime Text 3] for coding all the things
-* [The Unarchiver](http://unarchiver.c3.cx/unarchiver) for unarchiving all the things
-
-### PHP
-* [Composer](https://getcomposer.org) for installing PHP packages
-* [Laravel Installer](https://laravel.com/docs/5.4/installation) for starting new Laravel applications
-* [Laravel Valet](https://laravel.com/docs/5.4/valet) for local PHP/Laravel development
-* [PHP 7.1](http://www.php.net/)
-
 ### Utilities
-* [Homebrew] for managing operating system libraries
-* [Homebrew Cask] for quickly installing Mac apps from the command line
-* [Homebrew Services] so you can easily stop, start, and restart services
-* [hub] for interacting with the GitHub API
-* [The Silver Searcher] for finding things in files
-* [Zsh] as your shell
+* [Homebrew](http://brew.sh/) for managing operating system libraries
+* [Homebrew Cask](http://caskroom.io/) for quickly installing Mac apps from the command line
+* [Homebrew Services](https://github.com/Homebrew/homebrew-services) so you can easily stop, start, and restart services
+* [Zsh](http://www.zsh.org/) as your shell
+
+### Dev Tools
+* Node / NPM
 * [Yarn](https://yarnpkg.com/en/) An alternative to NPM
 * [Mailhog](https://github.com/mailhog/MailHog) for local development email testing
+* [Docker](https://www.docker.com/)
+* Minikube
+* Kubernetes-cli
+* Google Cloud SDK
+* AWS CLI
+* Azure CLI
 
 ### Databases
 * [MySQL] for storing relational data
 * [Postgres] for storing relational data
 
-[chruby]: https://github.com/postmodern/chruby
-[GitHub Desktop]: https://desktop.github.com/
-[Homebrew]: http://brew.sh/
-[Homebrew Cask]: http://caskroom.io/
-[Homebrew Services]: https://github.com/Homebrew/homebrew-services
-[hub]: https://github.com/github/hub
-[MySQL]: https://www.mysql.com/
-[n]: https://github.com/tj/n
-[Node.js]: http://nodejs.org/
-[NPM]: https://www.npmjs.org/
-[Postgres]: http://www.postgresql.org/
-[Python]: https://www.python.org/
-[pyenv]: https://github.com/yyuu/pyenv/
-[Ruby]: https://www.ruby-lang.org/en/
-[ruby-install]: https://github.com/postmodern/ruby-install
-[Slack]: https://slack.com/
-[Sublime Text 3]: http://www.sublimetext.com/3
-[The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
-[Virtualenv]: https://virtualenv.pypa.io/en/latest/
-[Virtualenvwrapper]: http://virtualenvwrapper.readthedocs.org/en/latest/#
-[Zsh]: http://www.zsh.org/
+### Other
+* Redis
 
 It should take less than 15 minutes to install (depends on your machine and internet connection).
 
